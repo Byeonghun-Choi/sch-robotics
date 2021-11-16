@@ -1,9 +1,9 @@
-from add_lists import add_lists
+import list_ops as lo
 
 if __name__ == "__main__":
-    
-    print("hello Python, hello ros")
-    print("python is best language")
-
-    result = add_lists(['wel', 't', 'r'], ['come', 'o', 'os'])
-    print(result)
+    foo = [1,2,3]
+    bar = [4,5,6]
+    print("foo+bar=", lo.add(foo, bar))
+    print("foo-bar=", lo.subtract(foo, bar))
+    print("foo*bar=", lo.multiply(foo, bar))
+    print("foo/bar=", lo.divide(foo, bar))
